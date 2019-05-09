@@ -6954,25 +6954,37 @@ label.panel-block {
   background: linear-gradient(341.94deg, #003087 16.67%, #0072DA 100%);
   position: relative;
   overflow: hidden; }
-  .hero-gradient::after {
-    content: "";
-    position: absolute;
-    bottom: -50%;
-    width: 200%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.1;
-    background: white;
-    transform: rotate(-5deg); }
   .hero-gradient .column {
     position: relative;
     z-index: 2; }
+
+.hero-fragment {
+  position: absolute;
+  right: -270px;
+  display: block;
+  background: url(../images/fragment.png) no-repeat;
+  background-size: contain;
+  width: 965px;
+  height: 652px;
+  opacity: 0.5; }
+
+.subtitle {
+  opacity: 0.7; }
 
 .landing-features {
   margin: 64px 0; }
 
 .page-breadcrumb {
   padding: 1em 0; }
+
+.icon-container {
+  background: #ECF4FB;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .icon-container img {
+    width: 175px !important;
+    margin: 0 auto; }
 
 .content-list {
   margin: 0 0 1.25em !important;
@@ -6984,3 +6996,61 @@ label.panel-block {
     padding-top: 0.8em; }
     .content-list li:not(:last-child) {
       border-bottom: 1px solid #eeeeee; }
+
+.img100 {
+  width: 100%; }
+
+.request-block__container {
+  padding: 1em;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out 0s;
+  cursor: pointer;
+  height: 64px; }
+  .request-block__container:not(:first-child) {
+    margin-top: 16px; }
+  .request-block__container--selected {
+    height: auto; }
+  .request-block__container.post {
+    background: rgba(35, 209, 96, 0.15);
+    border: 1px solid #23d160; }
+  .request-block__container.put {
+    background: rgba(255, 221, 87, 0.15);
+    border: 1px solid #ffdd57; }
+  .request-block__container.get {
+    background: rgba(32, 156, 238, 0.15);
+    border: 1px solid #209cee; }
+  .request-block__container.deprecated {
+    background: #fff;
+    border: 1px solid #dbdbdb; }
+
+.request-block__content {
+  margin-top: 2em; }
+  .request-block__content--title {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 8px; }
+
+.request-block .tag {
+  text-transform: uppercase; }
+
+/* CSS Simple Pre Code */
+pre {
+  background: #333;
+  white-space: pre;
+  word-wrap: break-word;
+  overflow: auto; }
+
+pre.code {
+  margin: 20px 0px;
+  border-radius: 4px;
+  border: 1px solid #292929;
+  position: relative; }
+
+pre.code code {
+  font-family: "Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
+  display: block;
+  margin: 0 0 0 60px;
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 19px;
+  color: #ddd; }
